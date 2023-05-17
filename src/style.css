@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    background: #0B2434;
+    padding: 30px 10px;
+}
+main {
+    background: #f5f5f5;
+    border-radius: 25px;
+    max-width: 800px;
+    min-height: 400px;
+    padding: 20px 20px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.title {
+    font-size: 40px;
+    margin: 0;
+}
+.instructions {
+    margin-top: 0;
+    text-align: center;
+}
+.dice-container {
+    display: grid;
+    grid-template: auto auto / repeat(5, 1fr);
+    gap: 20px;
+}
+.dice-face {
+    height: 50px;
+    width: 50px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 5px;
+}
+.dice-inner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.dice-inner.dice-1,
+.dice-inner.dice-2 {
+    justify-content: space-evenly;
+}
+.dice-inner.dice-3 {
+    transform: rotate(45deg);
+}
+.dice-inner.dice-4 {
+    padding: 6px;
+}
+.dot {
+    background-color: #002D62;
+    border-radius: 50%;
+    width: 13px;
+    height: 13px;
+}
+.dot.dot-5:nth-of-type(3) {
+    margin: 0 13px;
+}
+.dice-num {
+    font-size: 2rem;
+}
+.roll-dice {
+    height: 50px;
+    width: 150px;
+    border: none;
+    border-radius: 6px;
+    background-color: #5035FF;
+    color: #FFF;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.roll-dice:focus {
+    outline: none;
+}
+.roll-dice:active {
+    box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
+
+@media all and (min-width: 620px) {
+    body {
+        padding: 30px;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media all and (min-width: 768px) {
+    main {
+        margin-top: 50px;
+    }
+}
