@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# This game app is published on the next link
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+https://tenzies-game-al8619.netlify.app/
 
 ## Available Scripts
 
